@@ -14,11 +14,7 @@ Excessive ROIs are filtered out using non-maxima suppression for efficiency sake
 
 Each remaining ROI is inputted into a convolutional neural net to classify the object.
 
-On the recipe side, I extract the nouns and adjectives from the text and create bigrams and trigrams using genism phraser. After some cleaning, these are the ingredients for each recipe
-
-I then vectorize the ingredients
-
-And calculate the cosine similarity between the ingredients for each recipe and the ingredients detected in the image to create the recommendation. 
+On the recipe side, I extract the nouns and adjectives from the text and create bigrams and trigrams using genism phraser. After some cleaning, these are the ingredients for each recipe which are vectorized to calculate the cosine similarity between the ingredients for each recipe and the ingredients detected in the image to create the recommendation. 
 
 **Challenges & Process** 
 
